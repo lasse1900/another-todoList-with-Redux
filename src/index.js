@@ -4,7 +4,14 @@ import './index.css';
 import App from './App';
 import store from './store'
 
+const render = () => {
+  const state = store.getState()
+  ReactDOM.render(<App {...state} />, document.getElementById('root'));
+}
+render()
 
-const state = store.getState()
+store.subscribe(render)
 
-ReactDOM.render(<App {...state} />, document.getElementById('root'));
+setTimeout(() => {
+  store.dispatch({ type: 'TODO_ADD', payload: { id: 4, name: 'New todo', isComplete: true} })
+}, 1000)
