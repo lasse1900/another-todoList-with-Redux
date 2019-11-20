@@ -35,6 +35,6 @@ class TodoList extends Component {
 }
 
 export default connect(
-  (state, ownProps) => ({ todos: getVisibleTodos(state.todo.todos, ownProps.filter) }),
-  { fetchTodos, toggleTodo, deleteTodo }
+  (state, ownProps) => ({todos: getVisibleTodos(state.todo.todos, ownProps.filter)}),
+  {fetchTodos, toggleTodo, deleteTodo}
 )(TodoList)
