@@ -44,6 +44,11 @@
       "name": "this",
       "isComplete": false,
       "id": 9
+    },
+    {
+      "name": "New todo",
+      "isComplete": false,
+      "id": 10
     }
   ]
 }
