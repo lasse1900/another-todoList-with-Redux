@@ -6,14 +6,9 @@
       "isComplete": true
     },
     {
-      "id": 2,
-      "name": "start server",
-      "isComplete": false
-    },
-    {
       "id": 3,
       "name": "Load data into app",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 4,
@@ -24,46 +19,6 @@
       "id": 5,
       "name": "update records",
       "isComplete": false
-    },
-    {
-      "name": "test",
-      "isComplete": false,
-      "id": 6
-    },
-    {
-      "name": "les",
-      "isComplete": false,
-      "id": 7
-    },
-    {
-      "name": "test",
-      "isComplete": false,
-      "id": 8
-    },
-    {
-      "name": "tests",
-      "isComplete": false,
-      "id": 9
-    },
-    {
-      "name": "test2",
-      "isComplete": false,
-      "id": 10
-    },
-    {
-      "name": "rapa",
-      "isComplete": false,
-      "id": 11
-    },
-    {
-      "name": "test",
-      "isComplete": false,
-      "id": 12
-    },
-    {
-      "name": "test",
-      "isComplete": false,
-      "id": 13
     }
   ]
 }

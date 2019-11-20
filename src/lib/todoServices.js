@@ -1,4 +1,5 @@
-const baseUrl = process.env.REACT_APP_BASE_URL
+const baseUrl = 'http://localhost:8080/todos'
+require('dotenv').config()
 
 export const getTodos = () => {
   return fetch(baseUrl)
