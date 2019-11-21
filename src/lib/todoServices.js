@@ -1,5 +1,4 @@
-const baseUrl = 'http://localhost:8080/todos'
-require('dotenv').config()
+const baseUrl = process.env.REACT_APP_BASE_URL
 
 export const getTodos = () => {
   return fetch(baseUrl)
@@ -7,13 +6,13 @@ export const getTodos = () => {
 }
 
 export const createTodo = (name) => {
-  return fetch('http://localhost:8080/todos', {
+  return fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ name: name, isComplete: false })
+    body: JSON.stringify({name: name, isComplete: false})
   })
     .then(res => res.json())
 }
